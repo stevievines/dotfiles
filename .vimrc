@@ -1,3 +1,6 @@
+call pathogen#infect()
+call pathogen#helptags()
+
 set nocompatible               " be iMproved
  filetype off                   " required!
 
@@ -67,8 +70,6 @@ autocmd! bufwritepost .vimrc source ~./vimrc
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
-call pathogen#infect()
-call pathogen#helptags()
 
 function! s:RubyHashSyntaxToggle() range
   if join(getline(a:firstline, a:lastline)) =~# '=>'

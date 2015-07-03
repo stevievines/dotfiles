@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'rake'
-require 'colored'
+# require 'colored'
 
 desc "Create symlinks for each of the files.  Prompts before overwriting"
 task :symlink do
@@ -30,16 +30,16 @@ def create_symlinks
       if File.exists?(target_path)
         puts "File #{target_path} exists.  Overwrite it (y/n)?"
         if STDIN.gets.chomp.downcase == 'y'
-          puts "#{"DELETING".red} #{target_path}"
+          puts "#{"DELETING"} #{target_path}"
           raise "This shouldn't happen, but if it does, I'm refusing to delete /" if target_path == "/"
           FileUtils.rm_r(target_path)
         else
-          puts "#{"SKIPPING".blue} #{target_path}"
+          puts "#{"SKIPPING"} #{target_path}"
           next
         end
       end
 
-      puts "#{"[SYMLINK]".green} #{source_path} --> #{target_path.yellow}"
+      puts "#{"[SYMLINK]"} #{source_path} --> #{target_path}"
       FileUtils.ln_s(source_path, target_path)
     end
   end

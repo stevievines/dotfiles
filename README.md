@@ -1,6 +1,8 @@
-# Ben's Dotfiles
+# Stevie's Dotfiles
 
-In this repository you'll find Ben's dotfiles.  I don't expect anyone to actually use these directly, but if you do, here's how you set it up.  Keep in mind that I 
+This is based off of [Ben's Dotfiles Repo](https://github.com/subdigital/dotfiles). Thanks, Ben!
+
+In this repository you'll find Stevie's dotfiles.  I don't expect anyone to actually use these directly, but if you do, here's how you set it up.  Keep in mind that I
 am not liable for any damage you do to your computer or files if you use these files.
 
 ## Prerequisites

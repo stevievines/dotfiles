@@ -68,6 +68,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# chruby, auto switch rubies when cd into directories
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
 # Customize to your needs...
 export PATH=$PATH:/Users/Stevie/.rvm/gems/ruby-1.9.3-p429/bin:/Users/Stevie/.rvm/gems/ruby-1.9.3-p429@global/bin:/Users/Stevie/.rvm/rubies/ruby-1.9.3-p429/bin:/Users/Stevie/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/Stevie/bin
 path+=('/home/Stevie/npm/bin')

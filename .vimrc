@@ -21,6 +21,7 @@ set list listchars=tab:\ \ ,trail:·
 
 " search
 set hlsearch
+set incsearch
 
 " Tab Completion
 set wildmode=list:longest,list:full
@@ -36,6 +37,9 @@ inoremap <Tab> <C-R>=CleverTab()<CR>
 
 " Handlebars Abbreviations
 let g:mustache_abbreviations = 1
+
+" Force Syntastic to Use RVM Managed Ruby Executable
+let g:syntastic_ruby_mri_exec = '~/.rvm/rubies/ruby-2.1.6/bin/ruby'
 
 " Ctrl P ignore
 set wildignore+=*/tmp/*,*/dist/*,*/node_modules/*,*.so,*.swp,*.zip     " MacOSX/Linux

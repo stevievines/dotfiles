@@ -21,7 +21,6 @@ set list listchars=tab:\ \ ,trail:·
 
 " search
 set hlsearch
-set incsearch
 
 " Tab Completion
 set wildmode=list:longest,list:full

@@ -9,7 +9,7 @@ am not liable for any damage you do to your computer or files if you use these f
 
 - Some version of ruby
 - `rake` and the `colored` gems installed locally
-- vim
+- [A patched font](https://gist.github.com/kevin-smets/8568070#install-a-patched-font)
 
 ## Symlinking these files
 

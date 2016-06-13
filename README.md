@@ -17,7 +17,7 @@ Clone the directory somewhere (I chose `~/Dropbox/dotfiles` so it would be easil
 you grab the submodules too, as the vim plugins are added as submodules.
 
 ```
-git clone https://github.com/subdigital/dotfiles.git
+git clone https://github.com/stevievines/dotfiles.git
 git submodule update --init --recursive
 ```
 

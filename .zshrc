@@ -3,23 +3,6 @@ ZSH=$HOME/.oh-my-zsh
 export AWS_ID=kevy
 export AWS_SECRET=kevy
 
-#Karma App Environment Variables
-export KARMAAPP_USERNAME="bc@karmaapp.io"
-export FACEBOOK_APP_KEY="1070909042925896"
-export FACEBOOK_APP_SECRET="b46f71c271b7709f6bd54a4dee3baa58"
-export TWITTER_APP_KEY="BESvCuNZKmS1qQ7ALitQ64Dum"
-export TWITTER_APP_SECRET="lNonjEF9yfj2IK3hVteYvDC8ShacrKEswwjvqR5YlDBQeNZub6"
-export LINKEDIN_APP_KEY="755pnfgevpnqkm"
-export LINKEDIN_APP_SECRET="y92vkU30M8dtonPW"
-export GITHUB_APP_KEY="82836b1a19efee4a21d7"
-export GITHUB_APP_SECRET="85fce6e5e238ab6a1e437831ed1c3d89a51f67bb"
-export GOOGLE_OAUTH2_APP_KEY="350026466559-5abgvslumt3f58b2tqqra33vf6ocqqc5.apps.googleusercontent.com"
-export GOOGLE_OAUTH2_APP_SECRET="uDpEQIEVoGlu49jl5-4l6rWC"
-export INSTAGRAM_APP_KEY="2e5dce8597c1425e96eff7f58ff1f15e"
-export INSTAGRAM_APP_SECRET="b250021287854acc8bf878d841d56ff1"
-export PINTEREST_APP_KEY="1444547"
-export PINTEREST_APP_SECRET="b250021287854acc8bf878d841d56ff1"
-
 # cert.pem file for openssl
 export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 

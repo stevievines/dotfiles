@@ -32,3 +32,6 @@ can skip existing ones if you want.
 
 
 I highly recommend you back up any existing dotfiles before trying this out.  Use at your own risk.
+
+## iTerm2 Setup
+I use iTerm2 for development, and recommend installing the solarized color scheme. [Instructions here](https://gist.github.com/kevin-smets/8568070#iterm2)

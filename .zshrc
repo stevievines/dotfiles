@@ -18,9 +18,10 @@ ZSH_THEME="agnoster"
 alias don='pair up strukturedkaos'
 alias tmux-start='sh /usr/share/tmux-start.sh'
 
-alias clean-branches="git checkout master; git fetch; git rebase; git branch --merged | grep -v '\*' | xargs -n 1 git branch -D"
+alias clean-branches="git checkout master && git fetch -p && git rebase && git branch --merged | grep -v '\*' | xargs -n 1 git branch -D"
 
 alias mm="middleman"
+alias vim="nvim"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 

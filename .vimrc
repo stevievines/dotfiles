@@ -1,10 +1,12 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+runtime macros/matchit.vim " required for ruby block selection
+
 set nocompatible               " be iMproved
  filetype off                   " required!
 
-set number "display line numbers"
+set number
 set ruler
 set nowrap
 "set cursorline
@@ -45,6 +47,18 @@ let g:syntastic_ruby_mri_exec = '~/.rvm/rubies/ruby-2.1.6/bin/ruby'
 
 " Ctrl P ignore
 set wildignore+=*/tmp/*,*/dist/*,*/node_modules/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+" Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+
+" vim-test https://github.com/janko-m/vim-test
+nmap <silent> <leader>t :TestNearest -strategy=neovim<CR>
+nmap <silent> <leader>T :TestFile -strategy=neovim<CR>
+nmap <silent> <leader>l :TestLast -strategy=neovim<CR>
+nmap <silent> <leader>a :TestSuite<CR>
 
 "disable arrow keys in insert mode
 "imap <up> <nop>

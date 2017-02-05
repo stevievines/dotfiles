@@ -77,11 +77,7 @@ nnoremap <silent><C-k> m`:silent -g/.*/d<CR>``:noh<CR>
 nnoremap <silent><Tab>j :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><Tab>k :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
-" goldenview has a default mapping for <C P> which I need for ctrlP
-let g:goldenview__enable_default_mapping = 0
-
 nmap <C-A> :AV<CR>
-nmap <silent> <C-L>  <Plug>GoldenViewSplit
 
 " save and check ruby syntax
 command! Rubyw :w | :! ruby -cw %

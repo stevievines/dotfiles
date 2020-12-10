@@ -1,7 +1,11 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-export AWS_ID=kevy
-export AWS_SECRET=kevy
+
+export GOPATH=$HOME
+export PATH=$PATH:$GOPATH/bin
+
+# for ruby
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # cert.pem file for openssl
 export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
@@ -10,7 +14,7 @@ export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="af-magic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -22,6 +26,21 @@ alias cb="git checkout master && git fetch -p && git rebase && git branch --merg
 
 alias mm="middleman"
 alias vim="nvim"
+
+alias cnin="cvx-ninja"
+alias cprod="cvx-prod"
+alias cprodw="cvx-prod-west"
+
+alias mc="cd /Users/stevievines/src/github.com/GetTerminus/master-company"
+alias wh="/Users/stevievines/src/github.com/GetTerminus/webhook"
+alias inn="cd /Users/stevievines/code/GetTerminus/infra-terminus-ninja"
+
+alias godotenvify="ruby -ne 'k, v = \$_.split(\"=\", 2); puts \"#{k}=#{v.chomp.inspect}\"'"
+alias cvxrefresh="cvx-ninja env | godotenvify > .env"
+
+# - use ripgrep with fzf
+export FZF_DEFAULT_COMMAND='rg --files --hidden -g "!{vendor}"'
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -56,17 +75,27 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/Stevie/.rvm/gems/ruby-1.9.3-p429/bin:/Users/Stevie/.rvm/gems/ruby-1.9.3-p429@global/bin:/Users/Stevie/.rvm/rubies/ruby-1.9.3-p429/bin:/Users/Stevie/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/Stevie/bin
 path+=('/home/Stevie/npm/bin')
+
+#chruby stuff: https://yous.be/2016/01/01/switching-rvm-to-chruby/
+if [ -e /usr/local/share/chruby/chruby.sh ]; then
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
+fi
+
 
 # Postgres
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-# Kevy Redis for prod stuff locally
-export REDIS=redis://127.0.0.1:6379/0
+# AWS CLI
+export PATH=~/Library/Python/3.6/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/Users/Stevie/.rvm/gems/ruby-1.9.3-p448/bin":$PATH
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# for OpenCV, followed this: https://robferguson.org/blog/2017/10/06/how-to-install-opencv-and-python-using-homebrew-on-macos-sierra/
+# Virtualenv/VirtualenvWrapper
+VIRTUALENVWRAPPER_PYTHON='/usr/local/bin/python3'
+source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=$HOME/.virtualenvs
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"

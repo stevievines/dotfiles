@@ -13,5 +13,8 @@
   default = current
 [core]
 	editor = nvim
+	excludesfile = ~/.gitignore_global
 [credential]
 	helper = osxkeychain
+[url "git@github.com:"]
+	insteadOf = https://github.com/

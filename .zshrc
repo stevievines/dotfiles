@@ -7,8 +7,8 @@ export PATH=$PATH:$GOPATH/bin
 # for ruby
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# cert.pem file for openssl
-export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
+# cert.pem file for openssl NOTE this was here but didn't work on new computer, no idea why it was here
+# export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -32,7 +32,6 @@ alias cprod="cvx-prod"
 alias cprodw="cvx-prod-west"
 
 alias mc="cd /Users/stevievines/src/github.com/GetTerminus/master-company"
-alias wh="/Users/stevievines/src/github.com/GetTerminus/webhook"
 alias inn="cd /Users/stevievines/code/GetTerminus/infra-terminus-ninja"
 
 alias godotenvify="ruby -ne 'k, v = \$_.split(\"=\", 2); puts \"#{k}=#{v.chomp.inspect}\"'"
@@ -85,17 +84,18 @@ fi
 
 
 # Postgres
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+# export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+# export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # AWS CLI
 export PATH=~/Library/Python/3.6/bin:$PATH
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"
 
 # for OpenCV, followed this: https://robferguson.org/blog/2017/10/06/how-to-install-opencv-and-python-using-homebrew-on-macos-sierra/
 # Virtualenv/VirtualenvWrapper
 VIRTUALENVWRAPPER_PYTHON='/usr/local/bin/python3'
 source /usr/local/bin/virtualenvwrapper.sh
 export WORKON_HOME=$HOME/.virtualenvs
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/stevievines/.vim'
 let g:netrw_dirhist_7='/Users/stevievines/src/github.com/GetTerminus/digital-attribution/internal/events'
 let g:netrw_dirhist_6='/Users/stevievines/code/GetTerminus/infra-terminus-ninja'
 let g:netrw_dirhist_5='/Users/stevievines/src/github.com/GetTerminus/master-company/cmd/crm-account-matches-crawler-completed-consumer/handler'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_2='/Users/stevievines/src/github.com/GetTerminus/master-comp
 let g:netrw_dirhist_1='/Users/stevievines/src/github.com/GetTerminus/master-company/cmd/crm-account-matches-crawler-completed-consumer/handler'
 let g:netrw_dirhist_0='/Users/stevievines/src/github.com/GetTerminus/master-company/cmd/crm-account-matches-crawler-completed-consumer'
 let g:netrw_dirhist_9='/Users/stevievines/.vim/bundle'
-let g:netrw_dirhist_8='/Users/stevievines/.vim'

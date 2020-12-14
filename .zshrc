@@ -95,7 +95,7 @@ export PATH=~/Library/Python/3.6/bin:$PATH
 
 # for OpenCV, followed this: https://robferguson.org/blog/2017/10/06/how-to-install-opencv-and-python-using-homebrew-on-macos-sierra/
 # Virtualenv/VirtualenvWrapper
-VIRTUALENVWRAPPER_PYTHON='/usr/local/bin/python3'
-source /usr/local/bin/virtualenvwrapper.sh
-export WORKON_HOME=$HOME/.virtualenvs
+#VIRTUALENVWRAPPER_PYTHON='/usr/local/bin/python3'
+#source /usr/local/bin/virtualenvwrapper.sh
+#export WORKON_HOME=$HOME/.virtualenvs
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"

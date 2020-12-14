@@ -13,6 +13,7 @@ am not liable for any damage you do to your computer or files if you use these f
 - oh-my-zsh (https://ohmyz.sh/#install) 
 - Node (https://github.com/neoclide/coc.nvim) for coc.nvim language server stuff
 - Terraform (for vim TerraformFmt to work; `brew install terraform`)
+- Ripgrep (for FZF configuration; `brew install ripgrep`)
 - NOTE had some certificates issues on most recent go, due to a specified cert.pem in my zshrc, which I disabled but left in there for future me.
 
 ## Symlinking these files

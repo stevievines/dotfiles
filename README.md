@@ -46,3 +46,4 @@ I (sometimes?) use neovim, which required a couple of additional steps:
 
  ## Plugin Installation
  Open vim and run `:PlugInstall` to install the plugins
+ Also run :GoInstallBinaries to install required go binaries

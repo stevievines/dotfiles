@@ -27,18 +27,11 @@ alias cb="git checkout master && git fetch -p && git rebase && git branch --merg
 alias mm="middleman"
 alias vim="nvim"
 
-alias cnin="cvx-ninja"
-alias cprod="cvx-prod"
-alias cprodw="cvx-prod-west"
-
-alias mc="cd /Users/stevievines/src/github.com/GetTerminus/master-company"
-alias inn="cd /Users/stevievines/code/GetTerminus/infra-terminus-ninja"
-
 alias godotenvify="ruby -ne 'k, v = \$_.split(\"=\", 2); puts \"#{k}=#{v.chomp.inspect}\"'"
 alias cvxrefresh="cvx-ninja env | godotenvify > .env"
 
 # - use ripgrep with fzf
-export FZF_DEFAULT_COMMAND='rg --files --hidden -g "!{vendor}"'
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

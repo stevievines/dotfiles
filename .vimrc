@@ -29,6 +29,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 
+" GitLink
+Plug 'https://github.com/mazubieta/gitlink-vim.git'
+
 " colorscheme
 Plug 'https://github.com/altercation/vim-colors-solarized.git'
 
@@ -45,6 +48,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-loc
 " ruby and rails stuff
 Plug 'https://github.com/vim-ruby/vim-ruby.git'
 Plug 'https://github.com/tpope/vim-rails.git'
+
 call plug#end()
 
 " FZF
@@ -258,3 +262,7 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+" git link commands (create github link for current line)
+command GitLink :echo gitlink#GitLink()
+nmap <leader>gl :echo gitlink#GitLink()<CR>
+vmap <leader>gl :echo gitlink#GitLink(1)<CR>

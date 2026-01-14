@@ -25,3 +25,6 @@
 # Work-specific config (secrets, email override)
 [includeIf "gitdir:~/code/carvana/"]
 	path = ~/.gitconfig.work
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/

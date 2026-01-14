@@ -1,34 +1,25 @@
-# Core tools
-brew "neovim"
-brew "stow"
-brew "ripgrep"
-brew "jq"
-brew "htop"
-brew "wget"
-
-# Shell
-brew "starship"
-brew "zoxide"
-
-# Version management
-brew "mise"
-
-# Development
-brew "go"
-brew "gh"
 brew "cmake"
-brew "ninja"
-brew "python@3.11"
-brew "yarn"
-
-# Utilities
 brew "dos2unix"
+brew "gh"
+brew "gnutls"
+brew "libassuan"
+brew "libksba"
+brew "pinentry"
 brew "gnupg"
+brew "go"
+brew "htop"
+brew "jq"
+brew "mise"
+brew "neovim"
+brew "ninja"
+brew "ripgrep"
+brew "starship"
+brew "stow"
 brew "topgrade"
-
-# Apps
+brew "wget"
+brew "zoxide"
 cask "alfred"
-cask "caffeine"
 cask "firefox"
 cask "ghostty"
-cask "karabiner-elements"
+go "github.com/golangci/golangci-lint/v2/cmd/golangci-lint"
+go "golang.org/x/tools/gopls"

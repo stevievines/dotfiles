@@ -1,7 +1,5 @@
 # Stevie's Dotfiles
 
-This is based off of [Ben's Dotfiles Repo](https://github.com/subdigital/dotfiles). Thanks, Ben!
-
 In this repository you'll find Stevie's dotfiles. I don't expect anyone to actually use these directly, but if you do, here's how you set it up. Keep in mind that I am not liable for any damage you do to your computer or files if you use these files.
 
 ## Structure
@@ -17,7 +15,9 @@ dotfiles/
 └── zsh/       # Zsh shell configuration
 ```
 
-## Homebrew Setup
+## Installation
+
+### Homebrew Setup
 
 This repo includes a `Brewfile` with all required tools and apps.
 
@@ -39,14 +39,7 @@ brew bundle dump --force --file=~/dotfiles/Brewfile
 brew bundle check --file=~/dotfiles/Brewfile
 ```
 
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/stevievines/dotfiles.git ~/dotfiles
-cd ~/dotfiles
-```
+### Apply symlinks via Stow
 
 Install packages with Stow:
 

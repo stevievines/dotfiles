@@ -18,6 +18,7 @@ alias vim="nvim"
 alias gst='git status'
 alias gco='git checkout'
 alias gb='git branch'
+alias ggpull='git pull origin "$(git branch --show-current)"'
 alias ggpush='git push origin "$(git branch --show-current)"'
 
 # - use ripgrep with fzf

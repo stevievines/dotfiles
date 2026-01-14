@@ -1,2 +1,5 @@
-[aws]
-disabled = true
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character"""

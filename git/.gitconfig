@@ -1,0 +1,27 @@
+[user]
+	name = Stevie Vines
+	email = stevievines@gmail.com
+
+[alias]
+	co = checkout
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+
+[push]
+	default = current
+
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+
+[credential]
+	helper = osxkeychain
+
+# Work-specific config (secrets, email override)
+[includeIf "gitdir:~/code/carvana/"]
+	path = ~/.gitconfig.work

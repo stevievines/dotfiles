@@ -1,0 +1,9 @@
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
+
+[settings.node]
+gpg_verify = true
+
+[tools]
+node = "24"
+ruby = "4"

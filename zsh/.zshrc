@@ -7,12 +7,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/Library/Python/3.11/bin"
 export PATH="$HOME/.local/bin:$PATH"
 
-#carvana
-alias azlogin='az login && az acr login --name cvnadev && az acr login --name cvnatest && az acr login --name cvnaprod && az acr login --name cvnaimages && az acr login --name cvnaimagesdev'
-alias vex='cd ~/code/carvana/vex/'
-alias dockerclean='docker rmi $(docker images -f "dangling=true" -q)'
-alias cc="CLAUDE_CODE_USE_VERTEX=1 CLOUD_ML_REGION=us-east5 ANTHROPIC_VERTEX_PROJECT_ID=crv-engineering-ai-prd-8058 claude"
 alias vim="nvim"
+alias dockerclean='docker rmi $(docker images -f "dangling=true" -q)'
 
 # git aliases (formerly oh-my-zsh)
 alias gst='git status'
